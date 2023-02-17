@@ -1,0 +1,212 @@
+.container {
+    text-align: center;
+}
+
+.containerButton {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+}
+
+button {
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    background-color: #0057a8;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    margin-right: 5%;
+    gap: 4px;
+}
+
+button > span {
+    font-size: 20px;
+}
+
+table{
+	text-align: center;
+	width: 90%;	
+	border-collapse: collapse;
+	margin: 0 auto;
+	min-width: 300px;
+	margin-top: 50px;
+    margin-bottom: 10px;
+	border: 2px solid #ffffff;
+}
+table > thead > tr > th {
+    padding: 10px;
+    background-color: #0057a8;
+    color: #ffffff;
+}
+
+.columnId {
+    border: 2px solid #ffffff;
+    width: 20%;
+}
+
+.columnName {
+    border: 2px solid #ffffff;
+    width: 50%;
+}
+
+.columnCreated {
+    border: 2px solid #ffffff;
+    width: 30%;
+}
+
+/* Modal */
+
+.containerModal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.containerModal .modal{
+    width: 369px;
+    height: 342px;
+    /* border: solid 1px; */
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+    gap: 22px;
+
+    background: #212529;
+
+    box-shadow: 0px 4px 40px -10px 
+    rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.containerModal .modal button.removedModal{
+    color: #F8F9FA;
+    background: none;
+    border: none;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.modalHeader {
+  
+    display: flex;
+
+    align-items: center;
+    padding: 12px 20px;
+    background: #0057a8;
+    border-radius: 4px 4px 0px 0px;
+
+  
+}
+
+.modalHeader > h1 {
+
+    margin-top: 12px;
+    margin-left: 20px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2px;
+    color: #F8F9FA;
+
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 22px 32px;
+
+    background: #212529;
+}
+
+.modalForm > label {
+    position: static;
+    width: 98px;
+    margin-top: 6.45px;
+  
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.182px;
+    line-height: 0px;
+
+    color: #F8F9FA;
+}
+
+.modalForm > input {
+    width: 329.93px;
+    height: 48px;
+    margin-top: 28.79px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 0px 16px 0px 16px;
+    gap: 10.15px;
+
+    box-sizing: border-box;
+
+    background: #343B41;
+    border: 1.2182px solid #F8F9FA;
+    color: #F8F9FA;
+}
+
+::placeholder {
+    color: #F8F9FA;
+}
+
+.modalForm > select {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 329.93px;
+    height: 48px;
+    margin-top: 28.79px;
+    border-radius: 4px;
+    padding: 0px 16px 0px 16px;
+    gap: 10.15px;
+
+    background: #343B41;
+    border: 1.2182 solid #F8F9FA;
+    color: #F8F9FA;
+}
+
+.modalForm > button {
+    width: 324px;
+    height: 48px;
+    padding: 0px 22px 0px 22px;
+    box-sizing: border-box;
+
+    margin-top: 25px;
+    border-radius: 4.06px;
+    gap: 10.15px;
+
+    background: #0057a8;
+    border: 1.2182px solid #0057a8;
+
+    color: #FFFFFF;
+
+}
+
+/* Modal */

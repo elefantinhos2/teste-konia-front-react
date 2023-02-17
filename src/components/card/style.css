@@ -1,0 +1,12 @@
+
+.itemTable {
+    background-color: #d8d8d8;
+}
+
+.itemId {
+    border-right: 2px solid #ffffff;
+}
+
+.itemCreated {
+    border-left: 2px  solid #ffffff;
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import { useEffect, useState } from "react";
 import './App.css';
+import ItemList from "./components/itemList";
+import api from "./services/api";
 
 function App() {
+
+    
+  const [listItem, setListItem] = useState([])
+
+
+  function loadItem() {
+    api.get("item/")
+    .then((response) => setListItem(response.data))
+    .catch((err) =>  console.log(err));
+  }
+
+  useEffect(() => {
+      loadItem();
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ItemList listItem={listItem} setListItem={setListItem}/>
     </div>
-  );
+  ); 
+
 }
 
 export default App;
+
